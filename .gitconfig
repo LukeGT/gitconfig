@@ -1,0 +1,12 @@
+[user]
+	name = Luke Tsekouras
+	email = luke.tsekouras@gmail.com
+[color]
+  ui = auto
+[alias]
+  ci = commit
+  co = checkout
+  br = branch
+  di = diff
+  st = status
+  lg = log --graph --color --pretty=format:'%Cblue%h %Cgreen%cn %Creset%s'
