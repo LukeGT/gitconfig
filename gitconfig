@@ -1,8 +1,9 @@
 [user]
   name = Luke Tsekouras
   email = luke.tsekouras@gmail.com
-[color]
+[core]
 	editor = vim -f
+[color]
   ui = auto
 [alias]
   ci = commit
