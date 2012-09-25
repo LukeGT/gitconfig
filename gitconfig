@@ -2,6 +2,7 @@
   name = Luke Tsekouras
   email = luke.tsekouras@gmail.com
 [color]
+	editor = vim -f
   ui = auto
 [alias]
   ci = commit
