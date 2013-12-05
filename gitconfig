@@ -12,3 +12,5 @@
   di = diff
   st = status
   lg = log --graph --color --pretty=format:'%Cred%d %Cblue%h %Cgreen%cn %Creset%s'
+[push]
+  default = simple
