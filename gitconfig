@@ -11,4 +11,6 @@
   br = branch
   di = diff
   st = status
-  lg = log --graph --color --pretty=format:'%Cblue%h %Cgreen%cn %Cred%d %Creset%s'
+  lg = log --graph --color
+[format]
+  pretty = %Cblue%h %Cgreen%cn%Cred%d %C(yellow)%cr %Creset%s%Creset
