@@ -15,4 +15,4 @@
 [format]
   pretty = %Cblue%h %Cgreen%cn%Cred%d %C(yellow)%cr %Creset%s%Creset
 [push]
-	default = matching
+	default = upstream
