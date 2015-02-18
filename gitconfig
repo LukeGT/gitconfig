@@ -1,6 +1,6 @@
 [user]
     name = Luke Tsekouras
-    email = luke.tsekouras@gmail.com
+    email = luke.tsekouras@sirca.org.au
 [core]
     editor = vim -f
     excludesfile = ~/.gitignore
