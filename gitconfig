@@ -1,19 +1,24 @@
 [user]
-  name = Luke Tsekouras
-  email = luke.tsekouras@gmail.com
+    name = Luke Tsekouras
+    email = luke.tsekouras@gmail.com
 [core]
-	editor = vim -f
+    editor = vim -f
 	excludesfile = ~/.gitignore
 [color]
-  ui = auto
+    ui = auto
 [alias]
-  ci = commit
-  co = checkout
-  br = branch
-  di = diff
-  st = status
-  lg = log --graph --color
+    ci = commit
+    co = checkout
+    br = branch
+    di = diff
+    st = status
+    lg = log --graph --color
 [format]
-  pretty = %Cblue%h %Cgreen%cn%Cred%d %C(yellow)%cr %Creset%s%Creset
+    pretty = %Cblue%h %Cgreen%cn%Cred%d %C(yellow)%cr %Creset%s%Creset
 [push]
-	default = upstream
+    default = upstream
+[merge]
+    tool = intellij
+[mergetool "intellij"]
+    cmd = idea merge $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE") $(cd $(dirname "$BASE") && pwd)/$(basename "$BASE") $(cd $(dirname "$MERGED") && pwd)/$(basename "$MERGED")
+    trustExitCode = true
