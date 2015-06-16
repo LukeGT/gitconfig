@@ -3,7 +3,7 @@
     email = luke.tsekouras@gmail.com
 [core]
     editor = vim -f
-	excludesfile = ~/.gitignore
+    excludesfile = ~/.gitignore
 [color]
     ui = auto
 [alias]
@@ -22,3 +22,5 @@
 [mergetool "intellij"]
     cmd = idea merge $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE") $(cd $(dirname "$BASE") && pwd)/$(basename "$BASE") $(cd $(dirname "$MERGED") && pwd)/$(basename "$MERGED")
     trustExitCode = true
+[diff]
+    renames = true
