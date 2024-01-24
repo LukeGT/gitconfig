@@ -12,15 +12,23 @@
     br = branch
     di = diff
     st = status
-    lg = log --graph --color
+    lg = log --graph --color --all
 [format]
     pretty = %Cblue%h %Cgreen%cn%Cred%d %C(yellow)%cr %Creset%s%Creset
 [push]
-    default = upstream
-[merge]
-    tool = intellij
-[mergetool "intellij"]
-    cmd = idea merge $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE") $(cd $(dirname "$BASE") && pwd)/$(basename "$BASE") $(cd $(dirname "$MERGED") && pwd)/$(basename "$MERGED")
-    trustExitCode = true
+	autoSetupRemote = true
 [diff]
     renames = true
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[rerere]
+	enabled = true
+	autoupdate = true
+[merge]
+	conflictStyle = diff3
+[rebase]
+	updateRefs = true
