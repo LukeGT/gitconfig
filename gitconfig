@@ -12,7 +12,7 @@
     br = branch
     di = diff
     st = status
-    lg = log --graph --color --all
+    lg = log --graph --color --remotes=origin/*HEAD --exclude='refs/remotes/origin/*' --all
 [format]
     pretty = %Cblue%h %Cgreen%cn%Cred%d %C(yellow)%cr %Creset%s%Creset
 [push]
