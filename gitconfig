@@ -32,3 +32,5 @@
 	conflictStyle = diff3
 [rebase]
 	updateRefs = true
+[init]
+	defaultBranch = main
