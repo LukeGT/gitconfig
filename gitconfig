@@ -21,16 +21,9 @@
     renames = true
 [credential "https://github.com"]
 	helper = 
-	helper = !/usr/bin/gh auth git-credential
+	helper = !/opt/homebrew/bin/gh auth git-credential
 [credential "https://gist.github.com"]
 	helper = 
-	helper = !/usr/bin/gh auth git-credential
-[rerere]
-	enabled = true
-	autoupdate = true
-[merge]
-	conflictStyle = diff3
-[rebase]
-	updateRefs = true
-[init]
-	defaultBranch = main
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[pull]
+	rebase = true
