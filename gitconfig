@@ -32,6 +32,7 @@
 	conflictStyle = diff3
 [rebase]
 	updateRefs = true
+	autoStash = true
 [init]
 	defaultBranch = main
 [pull]
