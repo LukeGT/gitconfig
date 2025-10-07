@@ -1,41 +1,42 @@
 [user]
-    name = Luke Tsekouras
-    email = luke.tsekouras@gmail.com
+	name = Luke Tsekouras
+	email = luke.tsekouras@gmail.com
 [core]
-    editor = vim -f
-    excludesfile = ~/.gitignore
+	editor = vim -f
+	excludesfile = ~/.gitignore
 [color]
-    ui = auto
+	ui = auto
 [alias]
-    ci = commit
-    co = checkout
-    br = branch
-    di = diff
-    st = status
-    lg = log --graph --color --remotes=origin/*HEAD --exclude='refs/remotes/origin/*' --all
+	ci = commit
+	co = checkout
+	br = branch
+	di = diff
+	st = status
+	lg = log --graph --color --remotes=origin/*HEAD --exclude='refs/remotes/origin/*' --all
 [format]
-    pretty = %Cblue%h %Cgreen%cn%Cred%d %C(yellow)%cr %Creset%s%Creset
+	pretty = %Cblue%h %Cgreen%cn%Cred%d %C(yellow)%cr %Creset%s%Creset
 [push]
-    autoSetupRemote = true
+	autoSetupRemote = true
+	default = current
 [diff]
-    renames = true
+	renames = true
 [credential "https://github.com"]
-    helper = 
-    helper = !/usr/bin/gh auth git-credential
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
 [credential "https://gist.github.com"]
-    helper = 
-    helper = !/usr/bin/gh auth git-credential
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
 [rerere]
-    enabled = true
-    autoupdate = true
+	enabled = true
+	autoupdate = true
 [merge]
-    conflictStyle = diff3
+	conflictStyle = diff3
 [rebase]
-    updateRefs = true
-    autoStash = true
+	updateRefs = true
+	autoStash = true
 [init]
-    defaultBranch = main
+	defaultBranch = main
 [pull]
-    rebase = true
+	rebase = true
 [fetch]
-    prune = true
+	prune = true
