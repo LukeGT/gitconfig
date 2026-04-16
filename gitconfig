@@ -13,6 +13,7 @@
 	di = diff
 	st = status
 	lg = log --graph --color --remotes=origin/*HEAD --exclude='refs/remotes/origin/*' --all
+	pf = push --force-with-lease
 [format]
 	pretty = %Cblue%h %Cgreen%cn%Cred%d %C(yellow)%cr %Creset%s%Creset
 [push]
