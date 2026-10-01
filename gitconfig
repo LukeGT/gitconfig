@@ -4,6 +4,7 @@
 [core]
 	editor = vim -f
 	excludesfile = ~/.gitignore
+	untrackedCache = true
 [color]
 	ui = auto
 [alias]
